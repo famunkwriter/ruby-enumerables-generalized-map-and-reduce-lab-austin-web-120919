@@ -8,7 +8,7 @@ def map(source_array)
 array
 end
 
-def reduce(source_array)
+def reduce(source_array, starting_point*)
   new_array = []
   counter = 0
   while counter < source_array.length do
