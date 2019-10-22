@@ -8,9 +8,9 @@ def map(source_array)
 array
 end
 
-def reduce(source_array)
+def reduce(source_array, starting_point)
   counter = 0
-  array=[]
+  total = starting_point
   while counter < source_array.length do
     total += source_array.push(yield(source_array[counter]))
     counter += 1
