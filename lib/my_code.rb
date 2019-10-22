@@ -12,7 +12,7 @@ def reduce(source_array)
   counter = 0
   array=[]
   while counter < source_array.length do
-    total += yield(source_array[counter])
+    total += source_array.push(yield(source_array[counter]))
     counter += 1
   end
   array
