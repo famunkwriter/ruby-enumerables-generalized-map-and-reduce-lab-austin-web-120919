@@ -9,8 +9,8 @@ array
 end
 
 def reduce(source_array)
-  counter = 0
   new_array = []
+  counter = 0
   while counter < source_array.length do
     total += new_array.push(yield(source_array[counter]))
     counter += 1
