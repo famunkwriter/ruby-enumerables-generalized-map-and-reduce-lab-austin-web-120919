@@ -10,9 +10,9 @@ end
 
 def reduce(source_array)
   counter = 0
-  total = 0
+  new_array = []
   while counter < source_array.length do
-    total += source_array.push(yield(source_array[counter]))
+    total += new_array.push(yield(source_array[counter]))
     counter += 1
   end
   total
